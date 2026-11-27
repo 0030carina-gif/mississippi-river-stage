@@ -3,343 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <title>密西西比河水位季节性 · 2026-11-26</title>
+  <title>密西西比河水位与驳船运费 · 2026-11-27</title>
   <style>
 :root {
-  --bg: #efe8db;
-  --paper: #fbf7f0;
-  --ink: #1c1915;
-  --muted: #6e675c;
-  --faint: #948c80;
-  --line: #e5ddcf;
-  --accent: #8d3a2b;
-  --accent-soft: #f4e6e0;
-  --up: #c0392b;
-  --down: #1e7a52;
-  --card: #fffdf8;
-  --soft: #f3eee4;
+  --bg: #efe8db; --paper: #fbf7f0; --ink: #1c1915; --muted: #6e675c; --faint: #948c80;
+  --line: #e5ddcf; --accent: #8d3a2b; --accent-soft: #f4e6e0; --up: #c0392b; --down: #1e7a52;
+  --card: #fffdf8; --soft: #f3eee4;
   --shadow: 0 1px 2px rgba(40,30,16,.04), 0 10px 28px rgba(40,30,16,.06);
-  --sans: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
-          "Microsoft YaHei", "Heiti SC", system-ui, sans-serif;
-  --serif: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "STSong",
-           "SimSun", Georgia, serif;
+  --sans: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --serif: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
   --mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
-  color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #141210;
-    --paper: #1c1916;
-    --ink: #f0e9de;
-    --muted: #b0a79b;
-    --faint: #8a8277;
-    --line: #3a342c;
-    --accent: #e08a7a;
-    --accent-soft: #3a2723;
-    --up: #e06b62;
-    --down: #5dcaa0;
-    --card: #221e1a;
-    --soft: #2a251f;
+    --bg: #141210; --paper: #1c1916; --ink: #f0e9de; --muted: #b0a79b; --faint: #8a8277;
+    --line: #3a342c; --accent: #e08a7a; --accent-soft: #3a2723; --up: #e06b62; --down: #5dcaa0;
+    --card: #221e1a; --soft: #2a251f;
     --shadow: 0 1px 2px rgba(0,0,0,.25), 0 10px 28px rgba(0,0,0,.28);
-    color-scheme: dark;
   }
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(141,58,43,.06), transparent 50%),
-    var(--bg);
-  color: var(--ink);
-  font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.75;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+  background: radial-gradient(1200px 500px at 10% -10%, rgba(141,58,43,.06), transparent 50%), var(--bg);
+  color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.75;
 }
-.wrap {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 36px 22px 88px;
-}
-header.hero {
-  padding: 4px 0 28px;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 28px;
-}
-.kicker {
-  margin: 0 0 8px;
-  color: var(--accent);
-  font-size: 12px;
-  letter-spacing: .2em;
-  font-weight: 600;
-}
-h1 {
-  font-family: var(--serif);
-  font-size: 34px;
-  font-weight: 650;
-  letter-spacing: .02em;
-  line-height: 1.25;
-  margin: 0 0 10px;
-}
-.lede {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-h2 {
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 650;
-  letter-spacing: .03em;
-  margin: 44px 0 14px;
-}
-h3 {
-  font-size: 15px;
-  font-weight: 650;
-  margin: 0 0 8px;
-}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 36px 22px 88px; }
+header.hero { padding: 4px 0 28px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+.kicker { margin: 0 0 8px; color: var(--accent); font-size: 12px; letter-spacing: .2em; font-weight: 600; }
+h1 { font-family: var(--serif); font-size: 34px; font-weight: 650; line-height: 1.25; margin: 0 0 10px; }
+.lede { margin: 0; color: var(--muted); font-size: 15px; }
+h2 { font-family: var(--serif); font-size: 22px; font-weight: 650; margin: 44px 0 14px; }
 p { margin: 0 0 12px; }
-.card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  padding: 20px 22px;
-}
-.card.conclusion {
-  border-left: 3px solid var(--accent);
-}
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 20px 22px; }
+.card.conclusion { border-left: 3px solid var(--accent); }
 .card.conclusion p:last-child { margin-bottom: 0; }
-.card.conclusion strong { font-weight: 650; }
-.flags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 14px 0 0;
-}
-.pill {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 650;
-  letter-spacing: .04em;
-  line-height: 1.5;
-  padding: 3px 9px;
-  border-radius: 999px;
-}
+.flags { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; }
+.pill { display: inline-block; font-size: 12px; font-weight: 650; letter-spacing: .04em; padding: 3px 9px; border-radius: 999px; }
 .pill.low { color: var(--up); background: color-mix(in srgb, var(--up) 14%, transparent); }
 .pill.ok { color: var(--down); background: color-mix(in srgb, var(--down) 14%, transparent); }
 .pill.warn { color: var(--accent); background: var(--accent-soft); }
-.table-wrap {
-  overflow-x: auto;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13.5px;
-  line-height: 1.5;
-  min-width: 860px;
-}
-th, td {
-  text-align: left;
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--line);
-  vertical-align: top;
-}
-th {
-  color: var(--muted);
-  font-weight: 600;
-  font-size: 11.5px;
-  letter-spacing: .06em;
-  background: var(--soft);
-  white-space: nowrap;
-}
+.table-wrap { overflow-x: auto; background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; line-height: 1.5; min-width: 860px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 11.5px; letter-spacing: .06em; background: var(--soft); white-space: nowrap; }
 tr:last-child td { border-bottom: 0; }
 td .name { font-weight: 650; }
 td .en { display: block; color: var(--faint); font-size: 12px; font-weight: 400; }
 td .num { font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 13px; }
 td .sub { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
-figure {
-  margin: 0 0 28px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #fff;
-}
-figcaption {
-  padding: 12px 16px 14px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
-  border-top: 1px solid var(--line);
-}
-ul, ol { margin: 0 0 12px; padding-left: 1.25em; }
+figure { margin: 0 0 28px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; }
+figure img { display: block; width: 100%; height: auto; background: #fff; }
+figcaption { padding: 12px 16px 14px; color: var(--muted); font-size: 13px; line-height: 1.6; border-top: 1px solid var(--line); }
+ul { margin: 0 0 12px; padding-left: 1.25em; }
 li { margin: 0 0 6px; }
-.notes {
-  color: var(--muted);
-  font-size: 14px;
-}
+.notes { color: var(--muted); font-size: 14px; }
 .notes a { color: var(--accent); }
-footer {
-  margin-top: 48px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-  color: var(--faint);
-  font-size: 12.5px;
-}
-footer a { color: var(--muted); }
+footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--faint); font-size: 12.5px; }
 @media (max-width: 640px) {
   .wrap { padding: 24px 14px 64px; }
   h1 { font-size: 26px; }
-  h2 { font-size: 20px; margin-top: 36px; }
-  .card { padding: 16px 16px; }
+  .card { padding: 16px; }
 }
+.wm-overlay{pointer-events:none;position:fixed;inset:-18%;z-index:9998;background-image:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22720%22%20height%3D%22420%22%3E%3Ctext%20x%3D%2228%22%20y%3D%22190%22%20fill%3D%22%23c5d0dc%22%20fill-opacity%3D%220.22%22%20font-size%3D%2218%22%20font-family%3D%22Microsoft%20YaHei%2CPingFang%20SC%2Csans-serif%22%20font-weight%3D%22600%22%20transform%3D%22rotate%28-28%2028%20190%29%22%3Eshengbanghengchang_carina%3C/text%3E%3Ctext%20x%3D%22390%22%20y%3D%22360%22%20fill%3D%22%23c5d0dc%22%20fill-opacity%3D%220.1716%22%20font-size%3D%2212%22%20font-family%3D%22Microsoft%20YaHei%2CPingFang%20SC%2Csans-serif%22%20transform%3D%22rotate%28-32%20390%20360%29%22%3Eshengbanghengchang_carina%3C/text%3E%3C/svg%3E'),url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22360%22%20height%3D%22210%22%3E%3Ctext%20x%3D%2214%22%20y%3D%2288%22%20fill%3D%22%23c5d0dc%22%20fill-opacity%3D%220.18%22%20font-size%3D%2211%22%20font-family%3D%22Microsoft%20YaHei%2CPingFang%20SC%2Csans-serif%22%20font-weight%3D%22600%22%20transform%3D%22rotate%28-30%2014%2088%29%22%3Eshengbanghengchang_carina%3C/text%3E%3Ctext%20x%3D%22175%22%20y%3D%22175%22%20fill%3D%22%23c5d0dc%22%20fill-opacity%3D%220.1404%22%20font-size%3D%229%22%20font-family%3D%22Microsoft%20YaHei%2CPingFang%20SC%2Csans-serif%22%20transform%3D%22rotate%28-26%20175%20175%29%22%3Eshengbanghengchang_carina%3C/text%3E%3C/svg%3E');background-repeat:repeat;background-size:720px 420px,360px 210px;transform:rotate(-2deg);opacity:1;}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header class="hero">
-      <p class="kicker">粮食驳船走廊 · 水位季节性</p>
-      <h1>密西西比河水位季节性</h1>
-      <p class="lede">圣路易斯及开罗、孟菲斯、维克斯堡、巴吞鲁日、新奥尔良关键站。观测时间均为 Asia/Shanghai（UTC+8）。数据截至 2026-11-26。</p>
-    </header>
+<div class="wm-overlay" aria-hidden="true"></div>
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker">粮食驳船走廊 · 水位与运费</p>
+    <h1>密西西比河水位与驳船运费</h1>
+    <p class="lede">圣路易斯、开罗、孟菲斯、维克斯堡、巴吞鲁日、新奥尔良。水位观测为美国中部时间 2026-11-26 晚间（北京时间 2026-11-27 早晨）。驳船运费为 USDA 周度，最新一周截止 2026-11-24。</p>
+  </header>
 
-    <h2>整体结论</h2>
-    <div class="card conclusion">
-      <p><strong>整条河不是同一状态。</strong>开罗—孟菲斯—维克斯堡中下游季节性偏低；圣路易斯以及更下游的巴吞鲁日、新奥尔良为季节性正常（巴吞鲁日贴近正常下限）。</p>
-      <p>对粮食驳船更紧的是两端走势：<strong>开罗当前最紧</strong>，仅比 NWS 低水阈值 10.3 ft 高约 0.58 ft（预报约一周内回升）；圣路易斯当前仍属正常、高于 1.0 ft 减载参考，但 <strong>NWS 预报未来约 10 天可能降至 1.0 ft 以下</strong>。</p>
-      <div class="flags">
-        <span class="pill ok">圣路易斯 正常</span>
-        <span class="pill low">开罗 偏低 · 接近低水阈值</span>
-        <span class="pill low">孟菲斯 偏低</span>
-        <span class="pill low">维克斯堡 偏低（近边界）</span>
-        <span class="pill ok">巴吞鲁日 正常（近下限）</span>
-        <span class="pill ok">新奥尔良 正常</span>
-      </div>
+  <h2>整体结论</h2>
+  <div class="card conclusion">
+    <p><strong>中下游水位仍季节性偏低，圣路易斯目前正常，但预报约 10 天后可能跌破减载参考。</strong>开罗、孟菲斯、维克斯堡、巴吞鲁日、新奥尔良（按近 24 小时均值）都低于 11 月 26 日历史第 25 百分位。开罗 12.13 ft，比低水阈值 10.3 ft 高约 1.8 ft，NWS 预报 12 月 2 日前后可升到约 18 ft，随后再度回落。</p>
+    <p>圣路易斯当前 4.47 ft，仍高于 1.0 ft 减载参考约 3.5 ft。NWS 预报路径持续下行，约在美国中部时间 12 月 7 日降到 1.0 ft 以下，12 月 10 日附近约 -0.7 ft。那会迫使粮食驳船减载，同一条船能装的玉米和大豆变少。</p>
+    <div class="flags">
+      <span class="pill ok">圣路易斯 正常</span>
+      <span class="pill warn">预报或将低于 1.0 ft</span>
+      <span class="pill low">开罗 偏低</span>
+      <span class="pill low">孟菲斯 偏低</span>
+      <span class="pill low">维克斯堡 偏低</span>
+      <span class="pill low">巴吞鲁日 偏低</span>
+      <span class="pill low">新奥尔良 偏低（潮汐，看日均）</span>
     </div>
-
-    <h2>各站一览</h2>
-    <p class="notes">分档依据各站「当日」（11-26）历史同期样本：低于第 25 百分位为偏低，25–75 为正常，高于第 75 百分位为偏高。水位是水尺读数（stage，英尺），不是水深或 9 英尺航道深度；站与站之间不可直接比绝对值。</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>站点</th>
-            <th>当前水位</th>
-            <th>判断</th>
-            <th>同期对照（11-26）</th>
-            <th>关键阈值</th>
-            <th>观测时间</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="name">圣路易斯</span><span class="en">St. Louis, MO · USGS 07010000 / NWS EADM7</span></td>
-            <td><span class="num">4.28 ft</span><span class="sub">1.30 m</span></td>
-            <td><span class="pill ok">正常</span><span class="sub">第 41 百分位</span></td>
-            <td>中位数 4.74 ft<span class="sub">P25–P75：2.62–11.59 ft<br>1996–2025，缺 2011 年，29 个样本</span></td>
-            <td>减载参考 1.0 ft<span class="sub">LWRP / 低水阈值 -3.2 ft<br>警戒 28 ft · 洪水位 30 ft<br>距减载参考仍约 3.3 ft</span></td>
-            <td>2026-11-26 21:30<span class="sub">Asia/Shanghai（UTC+8）<br>USGS 瞬时值（07:30 CST）；同日 07:00 CST / NWS 为 4.34 ft</span></td>
-          </tr>
-          <tr>
-            <td><span class="name">开罗</span><span class="en">Cairo, IL · 俄亥俄河河口 · NWS CIRI2</span></td>
-            <td><span class="num">10.88 ft</span><span class="sub">3.32 m</span></td>
-            <td><span class="pill low">偏低</span><span class="sub">第 6.7 百分位<br>接近低水阈值</span></td>
-            <td>中位数 20.08 ft<span class="sub">P25–P75：13.60–27.54 ft<br>1996–2025，30 个样本</span></td>
-            <td>NWS 低水阈值 10.3 ft<span class="sub">仅高约 0.58 ft<br>警戒 32 ft · 洪水位 40 ft</span></td>
-            <td>2026-11-26 21:00<span class="sub">Asia/Shanghai（UTC+8）<br>NWS CIRI2</span></td>
-          </tr>
-          <tr>
-            <td><span class="name">孟菲斯</span><span class="en">Memphis, TN · NWS MEMT1</span></td>
-            <td><span class="num">-5.08 ft</span><span class="sub">-1.55 m</span></td>
-            <td><span class="pill low">偏低</span><span class="sub">第 11.7 百分位</span></td>
-            <td>中位数 3.77 ft<span class="sub">P25–P75：-1.88–13.36 ft<br>1996–2025，30 个样本<br>负值由水尺零点设定所致，属该站常态</span></td>
-            <td>NWS 低水阈值 -8.0 ft<span class="sub">USACE LWRP -8.3 ft<br>仍高约 2.9 / 3.2 ft<br>警戒 28 ft · 洪水位 34 ft</span></td>
-            <td>2026-11-26 21:00<span class="sub">Asia/Shanghai（UTC+8）<br>NWS MEMT1</span></td>
-          </tr>
-          <tr>
-            <td><span class="name">维克斯堡</span><span class="en">Vicksburg, MS · NWS VCKM6</span></td>
-            <td><span class="num">7.78 ft</span><span class="sub">2.37 m</span></td>
-            <td><span class="pill low">偏低</span><span class="sub">第 23.3 百分位<br>接近正常边界</span></td>
-            <td>中位数 13.91 ft<span class="sub">P25–P75：8.66–22.86 ft<br>1996–2025，30 个样本<br>仅比 P25 低约 0.9 ft</span></td>
-            <td>NWS 低水阈值 0.8 ft<span class="sub">仍高约 7.0 ft<br>警戒 35 ft · 洪水位 43 ft</span></td>
-            <td>2026-11-26 21:00<span class="sub">Asia/Shanghai（UTC+8）<br>NWS VCKM6</span></td>
-          </tr>
-          <tr>
-            <td><span class="name">巴吞鲁日</span><span class="en">Baton Rouge, LA · USGS 07374000 / NWS BTRL1</span></td>
-            <td><span class="num">7.57 ft</span><span class="sub">2.31 m</span></td>
-            <td><span class="pill ok">正常</span><span class="sub">第 27.3 百分位<br>贴近正常下限</span></td>
-            <td>中位数 10.17 ft<span class="sub">P25–P75：7.28–15.45 ft<br>2004–2025，22 个样本<br>（1998–2003 日均值基本缺失）</span></td>
-            <td>NWS 未公布低水阈值<span class="sub">警戒 30 ft · 洪水位 35 ft<br>NWS 同期读数约低 0.3 ft，本页以 USGS 为准</span></td>
-            <td>2026-11-26 21:15<span class="sub">Asia/Shanghai（UTC+8）<br>USGS 15 分钟瞬时值</span></td>
-          </tr>
-          <tr>
-            <td><span class="name">新奥尔良</span><span class="en">New Orleans, LA（Carrollton）· NWS NORL1</span></td>
-            <td><span class="num">3.10 ft</span><span class="sub">0.94 m</span></td>
-            <td><span class="pill ok">正常</span><span class="sub">第 43.3 百分位</span></td>
-            <td>中位数 3.52 ft<span class="sub">P25–P75：2.60–4.99 ft<br>1996–2025，30 个样本<br>日值由小时序列平均；下游有潮汐影响</span></td>
-            <td>NWS 未公布低水阈值<span class="sub">警戒 / 轻度洪水位均为 17.0 ft</span></td>
-            <td>2026-11-26 20:00<span class="sub">Asia/Shanghai（UTC+8）<br>NWS NORL1</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h2>主图：圣路易斯</h2>
-    <p class="notes">粮食驳船常用参照站。浅蓝为 1996–2025 年同期 10–90 分位，中蓝为 25–75 分位（本页的「正常」范围），深蓝线为历史中位数，红线为 2026 年实测，黑点为当前水位。水平线为 NWS 公布的减载参考、低水阈值与警戒 / 洪水位。</p>
-    <figure>
-      <img src="mississippi_st_louis_seasonal_stage_1996-2025_asof_2026-11-26.png"
-           alt="密西西比河圣路易斯站水位季节性图：1996–2025 年分位带与 2026 年走势，当前 4.28 英尺、判断为正常。">
-      <figcaption>圣路易斯 USGS 07010000，历史分位基于每日 08:00（美国中部时间）水位。当前点为 2026-11-26 21:30 Asia/Shanghai 的瞬时观测 4.28 ft。NWS 预报（2026-11-26 09:51 Asia/Shanghai 发布）显示将持续回落，约 12 月 5–6 日（美国中部时间）可能低于 1.0 ft 减载参考。</figcaption>
-    </figure>
-
-    <h2>辅助图：中下游关键站</h2>
-    <p class="notes">开罗官方通航参照是俄亥俄河河口站（NWS CIRI2），不是密西西比河干流站。巴吞鲁日气候态因数据缺口实际为 2004–2025 年。</p>
-    <figure>
-      <img src="mississippi_lower_reaches_seasonal_stage_1996-2025_asof_2026-11-26.png"
-           alt="密西西比河中下游五站水位季节性联图：开罗、孟菲斯、维克斯堡偏低，巴吞鲁日和新奥尔良为正常。">
-      <figcaption>开罗、孟菲斯、维克斯堡、巴吞鲁日、新奥尔良。开罗当前 10.88 ft，接近 NWS 低水阈值 10.3 ft；NWS 预报（2026-11-26 00:01 Asia/Shanghai 发布）显示约 12 月 2–3 日可回升至约 19.1 ft，低水压力有望暂时缓解。</figcaption>
-    </figure>
-
-    <h2>通航含义</h2>
-    <div class="card notes">
-      <ul>
-        <li>NWS 对圣路易斯的说明：水位低于 1.0 ft 时，商用驳船可能需减载，并可能需要疏浚以维持 9 英尺航道。当前 4.28 ft 尚未到该水平。</li>
-        <li>开罗是眼下最紧的一站，已接近 10.3 ft 低水阈值；预报约一周内回升。</li>
-        <li>孟菲斯季节性偏低，但仍高于低水阈值与 LWRP。维克斯堡只略低于第 25 百分位，距低水阈值仍有约 7 ft。</li>
-        <li>NWS 预报不是实测，会随降雨更新。当天能否满载通航，仍应以美国陆军工程兵团圣路易斯分区 Navigation Status Reports 为准。</li>
-      </ul>
-    </div>
-
-    <h2>数据来源与限制</h2>
-    <div class="card notes">
-      <p>气候态统一用 1996–2025 年（圣路易斯缺 2011-11-26，当日 29 个样本）。巴吞鲁日 USGS 日平均在 1998–2003 年基本缺失，实际为 2004–2025（22 年）。</p>
-      <ul>
-        <li>圣路易斯：USGS 07010000 每日 08:00 水尺（统计码 30800）；当前为瞬时值。NWS EADM7。</li>
-        <li>开罗：USACE MVS 日水位（Cairo-Ohio datman-rev），近期小时值补齐；当前 NWS CIRI2。</li>
-        <li>孟菲斯、维克斯堡：USACE MVK 日水位；当前分别为 NWS MEMT1、VCKM6。USGS 07032000 只发布流量、不发布水位。孟菲斯 LWRP 来自 USACE 孟菲斯分区。</li>
-        <li>巴吞鲁日：USGS 07374000 日平均水位；当前为 15 分钟瞬时值。NWS BTRL1。</li>
-        <li>新奥尔良：USACE MVK 小时水位的日平均；当前 NWS NORL1。</li>
-        <li>洪水、警戒、低水阈值来自 NWS NWPS 各站；圣路易斯 1.0 ft 减载说明来自 NWS EADM7 低水影响说明。</li>
-      </ul>
-      <p>近期 USGS / NWS / USACE 观测均为临时数据，事后可能修订。圣路易斯当前点是 07:30 CST 瞬时值，历史分位基于每日 08:00，口径非常接近但不完全相同。本页不替代官方航道通告。</p>
-    </div>
-
-    <footer>
-      公开数据：USGS Water Data、NWS National Water Prediction Service、USACE CWMS。页面生成于 2026-11-26。
-    </footer>
   </div>
+
+  <h2>各站一览</h2>
+  <p class="notes">分档看美国中部时间 11 月 26 日的历史同期：低于第 25 百分位为偏低，25–75 为正常，高于第 75 百分位为偏高。水位是水尺读数（stage，英尺），不是水深。站与站之间不要直接比绝对值。新奥尔良有潮汐，表内用近 24 小时平均。</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>站点</th><th>当前水位</th><th>判断</th><th>同期对照（11-26）</th><th>关键阈值</th><th>观测时间</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="name">圣路易斯</span><span class="en">St. Louis · USGS 07010000 / NWS EADM7</span></td>
+          <td><span class="num">4.47 ft</span><span class="sub">1.36 m</span></td>
+          <td><span class="pill ok">正常</span><span class="sub">第 45 百分位</span></td>
+          <td>中位数 4.74 ft<span class="sub">P25–P75：2.62–11.59 ft<br>1996–2025，缺 2011 年，29 个样本</span></td>
+          <td>减载参考 1.0 ft<span class="sub">仍高约 3.5 ft<br>LWRP -3.2 ft · 警戒 28 · 洪水位 30</span></td>
+          <td>2026-11-27 09:00<span class="sub">北京时间<br>美国中部 2026-11-26 19:00 · USGS 瞬时</span></td>
+        </tr>
+        <tr>
+          <td><span class="name">开罗</span><span class="en">Cairo · 俄亥俄河河口 · NWS CIRI2</span></td>
+          <td><span class="num">12.13 ft</span><span class="sub">3.70 m</span></td>
+          <td><span class="pill low">偏低</span><span class="sub">第 13 百分位</span></td>
+          <td>中位数 20.08 ft<span class="sub">P25–P75：13.60–27.54 ft<br>1996–2025，30 个样本</span></td>
+          <td>低水阈值 10.3 ft<span class="sub">高约 1.8 ft<br>警戒 32 ft · 洪水位 40 ft</span></td>
+          <td>2026-11-27 08:00<span class="sub">北京时间<br>NWS CIRI2</span></td>
+        </tr>
+        <tr>
+          <td><span class="name">孟菲斯</span><span class="en">Memphis · NWS MEMT1</span></td>
+          <td><span class="num">-5.38 ft</span><span class="sub">-1.64 m</span></td>
+          <td><span class="pill low">偏低</span><span class="sub">第 10 百分位</span></td>
+          <td>中位数 3.77 ft<span class="sub">P25–P75：-1.88–13.36 ft<br>1996–2025，30 个样本<br>负值来自水尺零点</span></td>
+          <td>低水阈值 -8.0 ft<span class="sub">LWRP -8.3 ft，仍高约 2.6 / 2.9 ft<br>警戒 28 · 洪水位 34</span></td>
+          <td>2026-11-27 08:00<span class="sub">北京时间<br>NWS MEMT1</span></td>
+        </tr>
+        <tr>
+          <td><span class="name">维克斯堡</span><span class="en">Vicksburg · NWS VCKM6</span></td>
+          <td><span class="num">7.64 ft</span><span class="sub">2.33 m</span></td>
+          <td><span class="pill low">偏低</span><span class="sub">第 23 百分位</span></td>
+          <td>中位数 13.91 ft<span class="sub">P25–P75：8.66–22.86 ft<br>1996–2025，30 个样本</span></td>
+          <td>低水阈值 0.8 ft<span class="sub">仍高约 6.8 ft<br>警戒 35 · 洪水位 43</span></td>
+          <td>2026-11-27 08:00<span class="sub">北京时间<br>NWS VCKM6</span></td>
+        </tr>
+        <tr>
+          <td><span class="name">巴吞鲁日</span><span class="en">Baton Rouge · USGS 07374000 / NWS BTRL1</span></td>
+          <td><span class="num">6.82 ft</span><span class="sub">2.08 m</span></td>
+          <td><span class="pill low">偏低</span><span class="sub">第 18 百分位</span></td>
+          <td>中位数 10.17 ft<span class="sub">P25–P75：7.28–15.45 ft<br>1997–2025，22 个样本<br>1998–2003 日值基本缺失</span></td>
+          <td>NWS 未公布低水阈值<span class="sub">警戒 30 ft · 洪水位 35 ft<br>NWS 同期 6.85 ft，本页用 USGS</span></td>
+          <td>2026-11-27 08:15<span class="sub">北京时间<br>USGS 瞬时</span></td>
+        </tr>
+        <tr>
+          <td><span class="name">新奥尔良</span><span class="en">New Orleans（Carrollton）· NWS NORL1</span></td>
+          <td><span class="num">2.64 ft</span><span class="sub">近 24 小时平均<br>瞬时 1.54 ft</span></td>
+          <td><span class="pill low">偏低</span><span class="sub">第 23 百分位<br>贴近 P25</span></td>
+          <td>中位数 3.65 ft<span class="sub">P25–P75：2.67–4.79 ft<br>1996–2025 日平均，30 个样本</span></td>
+          <td>未公布低水阈值<span class="sub">警戒 / 轻度洪水位 17 ft<br>瞬时低点来自潮汐，不单独作判断</span></td>
+          <td>2026-11-27 08:00<span class="sub">北京时间<br>NWS 近 24 小时</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>主图：圣路易斯</h2>
+  <p class="notes">浅蓝为 1996–2025 年同期 10–90 分位，中蓝为 25–75 分位，深蓝为中位数，红线为 2026 年。最新点有数据标签。</p>
+  <figure>
+    <img src="mississippi_st_louis_seasonal_stage_asof_2026-11-27.png" alt="圣路易斯水位季节性，2026-11-26 美国中部时间 4.47 英尺，判断为正常。">
+    <figcaption>USGS 07010000 每日 08:00（美国中部）水尺，当前点为 2026-11-26 19:00 美国中部时间的瞬时值 4.47 ft。NWS 预报从这里继续下行，约 12 月 7 日（美国中部）低于 1.0 ft，12 月 10 日附近约 -0.7 ft。</figcaption>
+  </figure>
+
+  <h2>中下游关键站</h2>
+  <p class="notes">开罗是俄亥俄河河口站。巴吞鲁日历史样本短于其他站。新奥尔良曲线是小时水位的日平均，图上最新标签用近 24 小时均值。</p>
+  <figure>
+    <img src="mississippi_lower_reaches_seasonal_stage_asof_2026-11-27.png" alt="开罗、孟菲斯、维克斯堡、巴吞鲁日、新奥尔良水位季节性，五站目前都偏低。">
+    <figcaption>五站目前都在正常带下沿或以下。开罗预报先升向约 18 ft 再回落；孟菲斯仍高于 -8 ft 低水阈值；维克斯堡距 0.8 ft 低水阈值还有约 7 ft。</figcaption>
+  </figure>
+
+  <h2>驳船运费</h2>
+  <div class="card conclusion">
+    <p><strong>最新一周（截止 2026-11-24）的下行粮食驳船运费处在收获季的季节性高位，但不是紧张年份。</strong>圣路易斯 520% 关税，约 20.73 美元/短吨，比 2021–2025 年同周均值 491% 高约 6%。开罗—孟菲斯 421% 关税，约 13.21 美元/短吨，比同周五年均值 444% 低约 5%。伊利诺伊河下游 636%，约 29.50 美元/短吨，比五年均值高约 9%。</p>
+    <p>2022 年同周圣路易斯曾到 850%、开罗—孟菲斯 821%。今年这一周远低于那一年。对美湾粮食出口，眼下运费抬高了内河段成本，但幅度还在近几年的收获季范围内，没有单独变成物流瓶颈。</p>
+    <p>需要分开看的是水位预报。这份运费是 11 月 24 日那一周的报价，还没有包含圣路易斯若在 12 月上旬跌破 1.0 ft 之后的减载。减载意味着同样的出口量要更多驳船、更多航次，运费往往在下一周才会跟上。开罗水位偏低但预报暂不破 10.3 ft 低水阈值，孟菲斯也还在低水阈值之上。</p>
+  </div>
+  <p class="notes">报价是 1976 年水道运价关税的百分比。美元/短吨 = 百分比 / 100 × 该段基准：圣路易斯 3.99 美元，开罗—孟菲斯 3.14 美元，伊利诺伊河下游 4.64 美元。图中红线是 2026 年，其前依次为紫、黄、绿、蓝，虚线是 2021–2025 年同周均值。上密西西比冬季停航，双子城等北段会缺周，这三站本年有连续报价。</p>
+  <figure>
+    <img src="mississippi_barge_freight_seasonal_asof_2026-11-24.png" alt="圣路易斯、开罗至孟菲斯、伊利诺伊河下游的粮食驳船运费季节性，最新一周截止 2026-11-24。">
+    <figcaption>USDA AMS AgTransport「Downbound Grain Barge Rates」。最新周：圣路易斯 520%（20.73 美元/短吨），开罗—孟菲斯 421%（13.21 美元/短吨），伊利诺伊河下游 636%（29.50 美元/短吨）。</figcaption>
+  </figure>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>区段</th><th>截止 2026-11-24</th><th>美元/短吨</th><th>2021–2025 同周均值</th><th>相对五年均值</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>圣路易斯</td><td class="num">520%</td><td class="num">20.73</td><td class="num">491%</td><td>高约 6%</td></tr>
+        <tr><td>开罗—孟菲斯</td><td class="num">421%</td><td class="num">13.21</td><td class="num">444%</td><td>低约 5%</td></tr>
+        <tr><td>伊利诺伊河下游</td><td class="num">636%</td><td class="num">29.50</td><td class="num">582%</td><td>高约 9%</td></tr>
+        <tr><td>中密西西比</td><td class="num">664%</td><td class="num">35.32</td><td class="num">—</td><td>北段，冬季可能中断</td></tr>
+        <tr><td>双子城</td><td class="num">694%</td><td class="num">42.96</td><td class="num">—</td><td>北段，冬季可能中断</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>对粮食物流</h2>
+  <div class="card notes">
+    <ul>
+      <li>美湾谷物出口大约九成要先走密西西比河系统的驳船。运费按关税百分比报价，同样的百分比，越往北每吨越贵。</li>
+      <li>这一周的运费说明收获季的船已经贵于春秋，但和 2022 年枯水叠加运力挤兑不是一回事。</li>
+      <li>若圣路易斯按预报在 12 月 7 日前后跌破 1.0 ft，商用驳船可能减载，出口节奏会更多取决于能否及时配船，而不是这一周的价目。</li>
+      <li>开罗是目前中游最接近低水阈值的站，预报先回升再回到偏低区间。孟菲斯、维克斯堡距各自低水阈值仍有数英尺。</li>
+      <li>NWS 预报会随降雨改。能否满载，以美国陆军工程兵团航道通告为准。</li>
+    </ul>
+  </div>
+
+  <h2>数据来源与日期</h2>
+  <div class="card notes">
+    <ul>
+      <li>水位最新观测：美国中部时间 2026-11-26 18:00–19:00，对应北京时间 2026-11-27 08:00–09:00。来自 USGS 瞬时值（圣路易斯、巴吞鲁日）和 NWS NWPS（其余各站）。新奥尔良判断用近 24 小时平均，瞬时值为 1.54 ft。</li>
+      <li>水位气候态：1996–2025 年同月日。圣路易斯为 USGS 每日 08:00 水尺；开罗、孟菲斯、维克斯堡为 USACE CWMS 日水位；新奥尔良为 USACE 小时水位的日平均；巴吞鲁日为 USGS 日平均，1998–2003 年基本缺失。</li>
+      <li>驳船运费：USDA AMS，数据集 Downbound Grain Barge Rates，最新周末 2026-11-24（第 47 周）。下一期通常在随后的周四。</li>
+      <li>近期 USGS / NWS / USACE 读数是临时数据，可能修订。预报不是实测。</li>
+    </ul>
+  </div>
+  <footer>公开数据：USGS Water Data、NWS National Water Prediction Service、USACE CWMS、USDA AMS AgTransport。页面更新于 2026-11-27。</footer>
+</div>
 </body>
 </html>
